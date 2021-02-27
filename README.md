@@ -9,7 +9,7 @@ Program accepts CSV (RFC 4180) with `login,password` pairs via STDIN. Outputs li
 
 #### Binary download
 
-Pre-built binaries available on [releases](https://github.com/Snawoot/passcheck/releases/latest) page.
+Pre-built binaries are available on [releases](https://github.com/Snawoot/passcheck/releases/latest) page.
 
 #### From source
 
