@@ -16,5 +16,5 @@ Pre-built binaries available on [releases](https://github.com/Snawoot/passcheck/
 Alternatively, you may install passcheck from source. Run within source directory
 
 ```
-go install
+make install
 ```

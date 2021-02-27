@@ -62,7 +62,10 @@ clean:
 run:
 	go run .
 
+install: $(src)
+	CGO_ENABLED=0 go install $(BUILDOPTS) $(LDFLAGS)
+
 .PHONY: clean native all bin-native bin-linux-amd64 bin-linux-386 bin-linux-arm \
 	bin-freebsd-amd64 bin-freebsd-386 bin-freebsd-arm bin-darwin-amd64 \
 	bin-windows-amd64 bin-windows-386 \
-	run fmt
+	run fmt install
