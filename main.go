@@ -15,9 +15,14 @@ const (
 	storeExpiry = 1 * time.Hour
 )
 
+var (
+	version = "unknown"
+)
+
 func main() {
 	client := hibp.NewClient(storeExpiry)
 
+	log.Printf("passcheck %s starting...", version)
 	log.Println("Reading CSV file with login,password pairs from STDIN...")
 
 	r := csv.NewReader(os.Stdin)
@@ -45,5 +50,5 @@ func main() {
 			log.Printf("Found breach for login \"%s\"!", login)
 		}
 	}
-
+	log.Printf("passcheck %s finished.", version)
 }
