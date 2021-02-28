@@ -19,6 +19,17 @@ Alternatively, you may install passcheck from source. Run within source director
 make install
 ```
 
+## Synopsis
+
+```
+$ passcheck -h
+Usage of passcheck:
+  -expire duration
+    	cache TTL (default 1h0m0s)
+  -threads uint
+    	number of threads for network requests (default 5)
+```
+
 ## Extras
 
 ### scan-passwordstore.sh
