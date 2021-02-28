@@ -34,7 +34,7 @@ Usage of passcheck:
 
 ### scan-passwordstore.sh
 
-Shell script which scans password saved in [`pass`](https://www.passwordstore.org/) for breached passwords. It automatically pipes all passwords from password store into passcheck utility.
+Shell script which scans password saved in [`pass`](https://www.passwordstore.org/) for breached passwords. It automatically pipes all passwords from password store into passcheck utility. All command-line options passed as is to the `passcheck` utility.
 
 Usage:
 
